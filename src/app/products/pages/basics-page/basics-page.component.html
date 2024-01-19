@@ -14,3 +14,45 @@
     <p-card header="titlecase"> {{ fullName | titlecase }} </p-card>
   </div>
 </div>
+
+<div class="grid mt-2">
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <ol>
+        <li>fecha</li>
+        <li>date | date</li>
+        <li>date | date:'short'</li>
+        <li>date | date : "long"</li>
+        <li>date | date : "MMMM"</li>
+        <li>date | date : "MMMM dd, yyyy"</li>
+        <li>date | date : "MMMM dd, yyyy"</li>
+      </ol>
+      <ol>
+        <li>date | date : "long":'GMT-6'</li>
+        <li>date | date : "long":'GMT-4'</li>
+        <li>date | date : "long":'':'es-MX'</li>
+        <li>date | date : "long":'':'fr-CA'</li>
+      </ol>
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="lowercase">
+      <ol>
+        <li>{{ date }}</li>
+        <li>{{ date | date }}</li>
+        <li>{{ date | date : "short" }}</li>
+        <li>{{ date | date : "long" }}</li>
+        <li>{{ date | date : "MMMM" }}</li>
+        <li>{{ date | date : "MMMM dd, yyyy" }}</li>
+        <li>{{ date | date : "MMMM dd, yyyy" }}</li>
+      </ol>
+
+      <ol>
+        <li>{{ date | date : "long" : "GMT-6" }}</li>
+        <li>{{ date | date : "long" : "GMT-4" }}</li>
+        <li>{{ date | date : "long" : "" : "es-MX" }}</li>
+        <li>{{ date | date : "long" : "" : "fr-CA" }}</li>
+      </ol>
+    </p-card>
+  </div>
+</div>
